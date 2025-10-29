@@ -12,7 +12,7 @@ destination = './data'
 # Cria pasta de destino se não existir
 os.makedirs(destination, exist_ok=True)
 
-# Baixa o arquivo CSV diretamente (não é zip)
+# Baixa o arquivo CSV diretamente
 api.dataset_download_file(dataset, file_name, path=destination, force=False)
 
 print(f"{file_name} baixado com sucesso em {destination}!")
