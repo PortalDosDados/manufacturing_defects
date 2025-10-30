@@ -47,3 +47,26 @@ plt.ylabel('Quantidade de Defeitos')
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
+
+
+
+# Plotando tipos de defeitos
+
+# Contagem de severidades
+defect_type_counts = df['defect_type'].value_counts()
+
+
+# Criação do gráfico
+plt.figure(figsize=(10, 6))
+ax = sns.barplot(x=defect_type_counts.index, y=defect_type_counts.values, palette='viridis')
+
+# Adicionando rótulos nas barras
+for container in ax.containers:
+    ax.bar_label(container, fmt='%d', label_type='edge', fontsize=10, padding=3)
+
+plt.title('Distribuição de Defeitos por Tipo', fontsize=14)
+plt.xlabel('Tipo')
+plt.ylabel('Quantidade de Defeitos')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
