@@ -48,8 +48,6 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
-
-
 # Plotando tipos de defeitos
 
 # Contagem de severidades
