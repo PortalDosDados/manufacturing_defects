@@ -1,17 +1,37 @@
-# manufacturing_defects
+# 🏭 Análise de Defeitos de Manufatura (Manufacturing Defects Analysis)
 
-Análise do dataset Manufacturing Defects:
+Este projeto consiste em uma ferramenta de **Análise Exploratória de Dados (EDA)** voltada para o setor industrial. O objetivo é processar dados brutos de qualidade, identificar padrões de falhas e visualizar custos de reparo e severidade, auxiliando gestores na tomada de decisão baseada em dados (Data-Driven Decision Making).
 
-Este conjunto de dados contém dados simulados relacionados a defeitos de fabricação observados durante processos de controle de qualidade. Inclui informações como tipo de defeito, data de detecção, localização no produto, nível de gravidade, método de inspeção utilizado e custos de reparo. Este conjunto de dados pode ser usado para analisar padrões de defeitos, aprimorar processos de controle de qualidade e avaliar o impacto dos defeitos na qualidade do produto e nos custos de produção.
-Colunas:
+## 📋 Visão Geral do Projeto
 
-defect_id: Identificador exclusivo para cada defeito.
-product_id: Identificador do produto associado ao defeito.
-defect_type: Tipo ou categoria do defeito (por exemplo, cosmético, funcional, estrutural).
-defect_description: Descrição do defeito.
-defect_date: Data em que o defeito foi detectado.
-defect_location: Local dentro do produto onde o defeito foi encontrado (por exemplo, superfície, componente).
-Gravidade: Nível de gravidade do defeito (ex.: leve, moderado, crítico).
-inspection_method: Método usado para detectar o defeito (por exemplo, inspeção visual, teste automatizado).
-repair_action: Ação tomada para reparar ou solucionar o defeito.
-custo_de_reparo: Custo incorrido para reparar o defeito (em moeda local).
+O script ingere um dataset de controle de qualidade e responde a perguntas críticas:
+
+* Qual é a severidade predominante dos defeitos?
+* Quais tipos de defeitos são mais frequentes?
+* Qual é o impacto financeiro (custo de reparo) associado?
+
+## 🛠 Tecnologias Utilizadas
+
+O projeto foi desenvolvido em **Python 3** utilizando a stack de Ciência de Dados padrão:
+
+* **Pandas:** Manipulação e limpeza de dados tabulares.
+* **NumPy:** Operações numéricas de alta performance.
+* **Matplotlib & Seaborn:** Visualização de dados estatísticos.
+
+## 📂 Estrutura de Arquivos
+
+Para garantir a execução correta, o projeto deve seguir a seguinte hierarquia de pastas (conforme definido no script):
+
+```text
+MANUFACTURING_DEFECTS/
+│
+├── data/                         <-- Pasta para armazenar os dados
+│
+├── venv/                         <-- Ambiente virtual Python
+│
+├── .gitattributes                <-- Configurações de atributos do Git
+├── .gitignore                    <-- Arquivo para ignorar itens no Git
+├── download.py                   <-- Script auxiliar para download de dados
+├── main.py                       <-- Script principal de análise
+├── README.md                     <-- Documentação do projeto (modificado)
+└── requirements.txt              <-- Lista de dependências do projeto
